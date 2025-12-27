@@ -51,6 +51,10 @@
       rel="stylesheet"
       href="/styles/steps.css"
     />
+    <link
+      rel="stylesheet"
+      href="/styles/catalog.css"
+    />
 
     <script
       defer
@@ -378,6 +382,84 @@
           src="public/images/steps.jpg"
           alt=""
         />
+      </div>
+    </section>
+
+    <section class="catalog section-box">
+      <div class="container">
+        <h2 class="catalog__title section__title">
+          Get a catalog of our projects
+        </h2>
+        <div class="catalog__content">
+          <picture>
+            <source
+              srcset="public/images/catalog-photo.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="public/images/catalog-photo.webp"
+              type="image/webp"
+            />
+            <img
+              class="catalog__content-img"
+              src="public/images/catalog-photo.jpg"
+              alt=""
+            />
+          </picture>
+          <form class="catalog__form">
+            <h3 class="catalog__form-title">
+              Leave your email to receive our project catalog
+            </h3>
+            <p class="catalog__form-text">
+              The catalog will help you choose a style and plan your layout.
+            </p>
+            <input
+              class="catalog__form-input"
+              type="email"
+              placeholder="Enter your email"
+            />
+            <label class="catalog__form-label">
+              <input
+                class="catalog__form-checkbox"
+                type="checkbox"
+              />
+              I agree to the processing of personal data
+            </label>
+            <button
+              class="catalog__form-btn"
+              type="submit"
+            >
+              Get the catalog
+            </button>
+          </form>
+        </div>
+        <div class="catalog__gallery">
+          <img
+            src="public/images/catalog/01.jpg"
+            alt=""
+          /><img
+            src="public/images/catalog/02.jpg"
+            alt=""
+          /><img
+            src="public/images/catalog/03.jpg"
+            alt=""
+          /><img
+            src="public/images/catalog/04.jpg"
+            alt=""
+          /><img
+            src="public/images/catalog/05.jpg"
+            alt=""
+          /><img
+            src="public/images/catalog/06.jpg"
+            alt=""
+          /><img
+            src="public/images/catalog/07.jpg"
+            alt=""
+          /><img
+            src="public/images/catalog/08.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </section>
   </body>
