@@ -56,8 +56,7 @@
   height: 20px;
 }
 
-.projects__arrow--prev,
-.projects__arrow--next {
+.projects__arrow {
   cursor: pointer;
 }
 
