@@ -18,8 +18,12 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Media reduced motion */
+/* Respect reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   :where(*, *::before, *::after) {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
@@ -32,6 +36,9 @@ html {
   display: block;
   max-width: 100%;
   height: auto;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  user-select: none;
 }
 
 /* Form elements inherit font styles */
@@ -78,7 +85,7 @@ html {
   border-radius: 2px;
 }
 
-/* Optional: inherit line-height for interactive elements */
+/* Inherit line-height for interactive elements */
 :where(button, input, select, textarea) {
   line-height: inherit;
 }
