@@ -1,3 +1,8 @@
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #171717 transparent;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   /* font-family: "Montserrat", sans-serif; */
@@ -11,4 +16,27 @@ body {
   max-width: 1740px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+.section-box {
+  padding: 150px 0;
+}
+
+.section__title {
+  margin-bottom: 55px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 1.16;
+}
+
+@media (max-width: 740px) {
+  .section-box {
+    padding: 50px 0;
+  }
+
+  .section__title {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
 }
