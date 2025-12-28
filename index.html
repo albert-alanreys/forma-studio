@@ -9,6 +9,12 @@
     <title>FORMA STUDIO</title>
 
     <link
+      rel="icon"
+      type="image/svg+xml"
+      href="public/favicon.svg"
+    />
+
+    <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
     />
@@ -29,31 +35,31 @@
 
     <link
       rel="stylesheet"
-      href="/styles/reset.css"
+      href="styles/reset.css"
     />
     <link
       rel="stylesheet"
-      href="/styles/main.css"
+      href="styles/main.css"
     />
     <link
       rel="stylesheet"
-      href="/styles/header.css"
+      href="styles/header.css"
     />
     <link
       rel="stylesheet"
-      href="/styles/services.css"
+      href="styles/services.css"
     />
     <link
       rel="stylesheet"
-      href="/styles/projects.css"
+      href="styles/projects.css"
     />
     <link
       rel="stylesheet"
-      href="/styles/steps.css"
+      href="styles/steps.css"
     />
     <link
       rel="stylesheet"
-      href="/styles/catalog.css"
+      href="styles/catalog.css"
     />
 
     <script
@@ -109,7 +115,7 @@
             href="#"
           >
             <img
-              src="public/images/logo.svg"
+              src="public/images/header/logo.svg"
               alt=""
             />
           </a>
@@ -118,7 +124,7 @@
             href="tel:+380682554585"
           >
             <img
-              src="public/images/phone.svg"
+              src="public/images/header/phone.svg"
               alt=""
             />
             <span>+38 (068) 255 45 85</span>
@@ -179,10 +185,29 @@
         <div class="projects__slider swiper">
           <div class="swiper-wrapper">
             <div class="projects__item swiper-slide">
-              <img
-                src="public/images/projects/01.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="
+                    public/images/projects/01/01.avif    1x,
+                    public/images/projects/01/01@2x.avif 2x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    public/images/projects/01/01.webp    1x,
+                    public/images/projects/01/01@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="catalog__content-img"
+                  src="public/images/projects/01/01.jpg"
+                  srcset="public/images/projects/01/01@2x.jpg 2x"
+                  alt="Modern living room interior with contemporary furniture"
+                  loading="lazy"
+                />
+              </picture>
               <h3 class="projects__item-title">Apartment 55.6 m²</h3>
               <p class="projects__item-description">
                 For a young couple of lawyers
@@ -199,10 +224,29 @@
               >
             </div>
             <div class="projects__item swiper-slide">
-              <img
-                src="public/images/projects/02.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="
+                    public/images/projects/02/02.avif    1x,
+                    public/images/projects/02/02@2x.avif 2x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    public/images/projects/02/02.webp    1x,
+                    public/images/projects/02/02@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="catalog__content-img"
+                  src="public/images/projects/02/02.jpg"
+                  srcset="public/images/projects/02/02@2x.jpg 2x"
+                  alt="Modern house exterior with large swimming pool"
+                  loading="lazy"
+                />
+              </picture>
               <h3 class="projects__item-title">The house</h3>
               <p class="projects__item-description">For a family of doctors</p>
               <p class="projects__item-text">
@@ -217,10 +261,29 @@
               >
             </div>
             <div class="projects__item swiper-slide">
-              <img
-                src="public/images/projects/03.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="
+                    public/images/projects/03/03.avif    1x,
+                    public/images/projects/03/03@2x.avif 2x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    public/images/projects/03/03.webp    1x,
+                    public/images/projects/03/03@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="catalog__content-img"
+                  src="public/images/projects/03/03.jpg"
+                  srcset="public/images/projects/03/03@2x.jpg 2x"
+                  alt="Modern house exterior with small pool and outdoor lounge area"
+                  loading="lazy"
+                />
+              </picture>
               <h3 class="projects__item-title">Country House</h3>
               <p class="projects__item-description">
                 For a family of entrepreneurs
@@ -237,10 +300,29 @@
               >
             </div>
             <div class="projects__item swiper-slide">
-              <img
-                src="public/images/projects/01.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="
+                    public/images/projects/01/01.avif    1x,
+                    public/images/projects/01/01@2x.avif 2x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    public/images/projects/01/01.webp    1x,
+                    public/images/projects/01/01@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="catalog__content-img"
+                  src="public/images/projects/01/01.jpg"
+                  srcset="public/images/projects/01/01@2x.jpg 2x"
+                  alt="Modern living room interior with contemporary furniture"
+                  loading="lazy"
+                />
+              </picture>
               <h3 class="projects__item-title">Apartment 55.6 m²</h3>
               <p class="projects__item-description">
                 For a young couple of lawyers
@@ -257,10 +339,29 @@
               >
             </div>
             <div class="projects__item swiper-slide">
-              <img
-                src="public/images/projects/02.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="
+                    public/images/projects/02/02.avif    1x,
+                    public/images/projects/02/02@2x.avif 2x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    public/images/projects/02/02.webp    1x,
+                    public/images/projects/02/02@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="catalog__content-img"
+                  src="public/images/projects/02/02.jpg"
+                  srcset="public/images/projects/02/02@2x.jpg 2x"
+                  alt="Modern house exterior with large swimming pool"
+                  loading="lazy"
+                />
+              </picture>
               <h3 class="projects__item-title">The house</h3>
               <p class="projects__item-description">For a family of doctors</p>
               <p class="projects__item-text">
@@ -275,10 +376,29 @@
               >
             </div>
             <div class="projects__item swiper-slide">
-              <img
-                src="public/images/projects/03.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="
+                    public/images/projects/03/03.avif    1x,
+                    public/images/projects/03/03@2x.avif 2x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    public/images/projects/03/03.webp    1x,
+                    public/images/projects/03/03@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="catalog__content-img"
+                  src="public/images/projects/03/03.jpg"
+                  srcset="public/images/projects/03/03@2x.jpg 2x"
+                  alt="Modern house exterior with small pool and outdoor lounge area"
+                  loading="lazy"
+                />
+              </picture>
               <h3 class="projects__item-title">Country House</h3>
               <p class="projects__item-description">
                 For a family of entrepreneurs
@@ -298,12 +418,12 @@
           <div class="projects__arrows">
             <img
               class="projects__arrow projects__arrow--prev"
-              src="public/images/arrow.svg"
+              src="public/images/projects/arrow.svg"
               alt="Previous slide"
             />
             <img
               class="projects__arrow projects__arrow--next"
-              src="public/images/arrow.svg"
+              src="public/images/projects/arrow.svg"
               alt="Next slide"
             />
           </div>
@@ -378,10 +498,29 @@
         </ol>
       </div>
       <div class="steps__img">
-        <img
-          src="public/images/steps.jpg"
-          alt=""
-        />
+        <picture>
+          <source
+            srcset="
+              public/images/steps/steps.avif    1x,
+              public/images/steps/steps@2x.avif 2x
+            "
+            type="image/avif"
+          />
+          <source
+            srcset="
+              public/images/steps/steps.webp    1x,
+              public/images/steps/steps@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="catalog__content-img"
+            src="public/images/steps/steps.jpg"
+            srcset="public/images/steps/steps@2x.jpg 2x"
+            alt="Modern living room interior with accent decor"
+            loading="lazy"
+          />
+        </picture>
       </div>
     </section>
 
@@ -393,19 +532,27 @@
         <div class="catalog__content">
           <picture>
             <source
-              srcset="public/images/catalog-photo.avif"
+              srcset="
+                public/images/catalog/catalog-photo.avif    1x,
+                public/images/catalog/catalog-photo@2x.avif 2x
+              "
               type="image/avif"
             />
             <source
-              srcset="public/images/catalog-photo.webp"
+              srcset="
+                public/images/catalog/catalog-photo.webp    1x,
+                public/images/catalog/catalog-photo@2x.webp 2x
+              "
               type="image/webp"
             />
             <img
               class="catalog__content-img"
-              src="public/images/catalog-photo.jpg"
-              alt=""
+              src="public/images/catalog/catalog-photo.jpg"
+              srcset="public/images/catalog/catalog-photo@2x.jpg 2x"
+              alt="Description of the image"
             />
           </picture>
+
           <form class="catalog__form">
             <h3 class="catalog__form-title">
               Leave your email to receive our project catalog
@@ -434,31 +581,190 @@
           </form>
         </div>
         <div class="catalog__gallery">
-          <img
-            src="public/images/catalog/01.jpg"
-            alt=""
-          /><img
-            src="public/images/catalog/02.jpg"
-            alt=""
-          /><img
-            src="public/images/catalog/03.jpg"
-            alt=""
-          /><img
-            src="public/images/catalog/04.jpg"
-            alt=""
-          /><img
-            src="public/images/catalog/05.jpg"
-            alt=""
-          /><img
-            src="public/images/catalog/06.jpg"
-            alt=""
-          /><img
-            src="public/images/catalog/07.jpg"
-            alt=""
-          /><img
-            src="public/images/catalog/08.jpg"
-            alt=""
-          />
+          <picture>
+            <source
+              srcset="
+                public/images/catalog/gallery/01/01.avif    1x,
+                public/images/catalog/gallery/01/01@2x.avif 2x
+              "
+              type="image/avif"
+            />
+            <source
+              srcset="
+                public/images/catalog/gallery/01/01.webp    1x,
+                public/images/catalog/gallery/01/01@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img
+              class="catalog__content-img"
+              src="public/images/catalog/gallery/01/01.jpg"
+              srcset="public/images/catalog/gallery/01/01@2x.jpg 2x"
+              alt="Modern kitchen interior with minimalist design"
+              loading="lazy"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="
+                public/images/catalog/gallery/02/02.avif    1x,
+                public/images/catalog/gallery/02/02@2x.avif 2x
+              "
+              type="image/avif"
+            />
+            <source
+              srcset="
+                public/images/catalog/gallery/02/02.webp    1x,
+                public/images/catalog/gallery/02/02@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img
+              class="catalog__content-img"
+              src="public/images/catalog/gallery/02/02.jpg"
+              srcset="public/images/catalog/gallery/02/02@2x.jpg 2x"
+              alt="Elegant corridor interior with modern lighting"
+              loading="lazy"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="
+                public/images/catalog/gallery/03/03.avif    1x,
+                public/images/catalog/gallery/03/03@2x.avif 2x
+              "
+              type="image/avif"
+            />
+            <source
+              srcset="
+                public/images/catalog/gallery/03/03.webp    1x,
+                public/images/catalog/gallery/03/03@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img
+              class="catalog__content-img"
+              src="public/images/catalog/gallery/03/03.jpg"
+              srcset="public/images/catalog/gallery/03/03@2x.jpg 2x"
+              alt="Stylish kitchen interior with open shelving"
+              loading="lazy"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="
+                public/images/catalog/gallery/04/04.avif    1x,
+                public/images/catalog/gallery/04/04@2x.avif 2x
+              "
+              type="image/avif"
+            />
+            <source
+              srcset="
+                public/images/catalog/gallery/04/04.webp    1x,
+                public/images/catalog/gallery/04/04@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img
+              class="catalog__content-img"
+              src="public/images/catalog/gallery/04/04.jpg"
+              srcset="public/images/catalog/gallery/04/04@2x.jpg 2x"
+              alt="Contemporary kitchen layout with natural light"
+              loading="lazy"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="
+                public/images/catalog/gallery/05/05.avif    1x,
+                public/images/catalog/gallery/05/05@2x.avif 2x
+              "
+              type="image/avif"
+            />
+            <source
+              srcset="
+                public/images/catalog/gallery/05/05.webp    1x,
+                public/images/catalog/gallery/05/05@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img
+              class="catalog__content-img"
+              src="public/images/catalog/gallery/05/05.jpg"
+              srcset="public/images/catalog/gallery/05/05@2x.jpg 2x"
+              alt="Spacious living room interior with modern furniture"
+              loading="lazy"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="
+                public/images/catalog/gallery/06/06.avif    1x,
+                public/images/catalog/gallery/06/06@2x.avif 2x
+              "
+              type="image/avif"
+            />
+            <source
+              srcset="
+                public/images/catalog/gallery/06/06.webp    1x,
+                public/images/catalog/gallery/06/06@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img
+              class="catalog__content-img"
+              src="public/images/catalog/gallery/06/06.jpg"
+              srcset="public/images/catalog/gallery/06/06@2x.jpg 2x"
+              alt="Cozy bedroom interior with soft lighting"
+              loading="lazy"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="
+                public/images/catalog/gallery/07/07.avif    1x,
+                public/images/catalog/gallery/07/07@2x.avif 2x
+              "
+              type="image/avif"
+            />
+            <source
+              srcset="
+                public/images/catalog/gallery/07/07.webp    1x,
+                public/images/catalog/gallery/07/07@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img
+              class="catalog__content-img"
+              src="public/images/catalog/gallery/07/07.jpg"
+              srcset="public/images/catalog/gallery/07/07@2x.jpg 2x"
+              alt="Modern living room interior with accent decor"
+              loading="lazy"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="
+                public/images/catalog/gallery/08/08.avif    1x,
+                public/images/catalog/gallery/08/08@2x.avif 2x
+              "
+              type="image/avif"
+            />
+            <source
+              srcset="
+                public/images/catalog/gallery/08/08.webp    1x,
+                public/images/catalog/gallery/08/08@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img
+              class="catalog__content-img"
+              src="public/images/catalog/gallery/08/08.jpg"
+              srcset="public/images/catalog/gallery/08/08@2x.jpg 2x"
+              alt="Outdoor patio space with modern furniture"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </div>
     </section>
