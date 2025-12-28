@@ -1,0 +1,137 @@
+.footer {
+  padding: 100px 0;
+  background-color: #171717;
+  color: #f5f5f5;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  column-gap: 80px;
+  row-gap: 40px;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+.footer__logo {
+  display: block;
+}
+
+.footer__nav {
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.footer__nav-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: calc(16 / 14);
+}
+
+.footer__contacts-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__contacts-item:first-child .footer__contacts-link {
+  align-items: flex-start;
+}
+
+.footer__contacts-item:last-child {
+  padding-left: 23px;
+}
+
+.footer__copy {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: calc(16 / 14);
+}
+
+@media (max-width: 1399px) {
+  .footer__inner {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__logo {
+    grid-column: 1 / -1;
+  }
+
+  .footer__nav {
+    justify-self: start;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 740px) {
+  .footer {
+    padding: 50px 0;
+  }
+
+  .footer__inner {
+    column-gap: 40px;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer {
+    padding: 50px 0;
+  }
+
+  .footer__inner {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .footer__nav {
+    gap: 10px;
+  }
+
+  .footer__social {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .footer__social-link span {
+    display: none;
+  }
+}

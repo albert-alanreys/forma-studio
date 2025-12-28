@@ -82,7 +82,7 @@
 
 @media (max-width: 740px) {
   .request {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 
   .request__inner {
