@@ -5,7 +5,10 @@ const initMenu = () => {
   if (!menuBtn || !menuList) return;
 
   menuBtn.addEventListener('click', () => {
+    const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+
     menuList.classList.toggle('active');
+    menuBtn.setAttribute('aria-expanded', String(!isExpanded));
   });
 };
 
