@@ -1,14 +1,15 @@
 .header {
-  background-image: url(../public/images/header-bg.jpg);
-  background-image: image-set(
-    '../public/images/header-bg.avif' type('image/avif'),
-    '../public/images/header-bg.webp' type('image/webp'),
-    '../public/images/header-bg.jpg' type('image/jpeg')
-  );
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   height: 100svh;
+  background: center / cover no-repeat
+    url('/public/images/header/header-bg.jpg');
+  background-image: image-set(
+    '/public/images/header/header-bg.avif' type('image/avif') 1x,
+    '/public/images/header/header-bg@2x.avif' type('image/avif') 2x,
+    '/public/images/header/header-bg.webp' type('image/webp') 1x,
+    '/public/images/header/header-bg@2x.webp' type('image/webp') 2x,
+    '/public/images/header/header-bg.jpg' type('image/jpeg') 1x,
+    '/public/images/header/header-bg@2x.jpg' type('image/jpeg') 2x
+  );
   color: #f5f5f5;
 }
 
