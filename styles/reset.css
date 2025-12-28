@@ -6,15 +6,15 @@
 /* Box sizing + reset margins/paddings */
 :where(*, *::before, *::after) {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 /* Base HTML setup */
 html {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
   scroll-behavior: smooth;
 }
 
@@ -25,9 +25,9 @@ html {
   }
 
   :where(*, *::before, *::after) {
+    transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
   }
 }
 
@@ -49,9 +49,9 @@ html {
 
 /* Buttons */
 :where(button) {
-  cursor: pointer;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 /* Links */
@@ -63,8 +63,8 @@ html {
 /* Headings */
 :where(h1, h2, h3, h4, h5, h6) {
   font-size: inherit;
-  line-height: 1.2;
   font-weight: inherit;
+  line-height: 1.2;
 }
 
 /* Lists reset */
@@ -80,9 +80,9 @@ html {
 }
 
 :where(:focus-visible) {
-  outline: 2px solid currentColor;
-  outline-offset: 2px;
   border-radius: 2px;
+  outline: 2px solid currentcolor;
+  outline-offset: 2px;
 }
 
 /* Inherit line-height for interactive elements */

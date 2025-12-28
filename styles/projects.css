@@ -19,18 +19,18 @@
 
 .projects__item-title {
   margin-bottom: 10px;
-  text-transform: uppercase;
-  font-weight: 300;
   font-size: 28px;
+  font-weight: 300;
   line-height: calc(33 / 28);
+  text-transform: uppercase;
 }
 
 .projects__item-description {
   margin-bottom: 30px;
-  text-transform: uppercase;
-  font-weight: 300;
   font-size: 18px;
+  font-weight: 300;
   line-height: calc(21 / 18);
+  text-transform: uppercase;
 }
 
 .projects__item-text {
@@ -40,12 +40,12 @@
 
 .projects__item-link {
   display: inline-block;
-  text-transform: uppercase;
-  border: 1px solid #171717;
   padding: 20px 100px;
   font-size: 18px;
-  line-height: calc(21 / 18);
   font-weight: 300;
+  line-height: calc(21 / 18);
+  text-transform: uppercase;
+  border: 1px solid #171717;
 }
 
 .projects__arrows {
@@ -64,7 +64,7 @@
   transform: rotate(180deg);
 }
 
-@media (max-width: 740px) {
+@media (width <= 740px) {
   .swiper-wrapper {
     margin-bottom: 20px;
   }
@@ -95,7 +95,7 @@
   }
 }
 
-@media (min-width: 1024px) and (hover: hover) {
+@media (width >= 1024px) and (hover: hover) {
   .projects__slider {
     overflow: visible;
   }

@@ -17,15 +17,15 @@
 }
 
 .request__content {
-  margin: 0 auto;
-  padding: 75px 115px;
   max-width: 1000px;
-  background-color: rgba(23, 23, 23, 0.85);
+  padding: 75px 115px;
+  margin: 0 auto;
+  background-color: rgb(23 23 23 / 85%);
 }
 
 .request__title {
-  color: #f5f5f5;
   line-height: calc(49 / 42);
+  color: #f5f5f5;
   text-wrap: balance;
 }
 
@@ -40,12 +40,12 @@
 .request__form-input {
   flex: 1 1 465px;
   padding: 20px;
-  border: none;
   font-size: 18px;
   font-weight: 300;
   line-height: calc(21 / 18);
   color: #2b2b2b;
   background-color: transparent;
+  border: none;
 }
 
 .request__form-input:focus-visible {
@@ -63,14 +63,14 @@
   width: auto;
   min-width: 270px;
   padding: 20px 50px;
-  background-color: #f5f5f5;
-  text-transform: uppercase;
   font-size: 18px;
   font-weight: 300;
   line-height: calc(21 / 18);
+  text-transform: uppercase;
+  background-color: #f5f5f5;
 }
 
-@media (max-width: 1300px) {
+@media (width <= 1300px) {
   .request__content {
     padding: 50px;
   }
@@ -80,7 +80,7 @@
   }
 }
 
-@media (max-width: 740px) {
+@media (width <= 740px) {
   .request {
     padding-bottom: 50px;
   }
