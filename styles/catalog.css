@@ -4,14 +4,14 @@
 
 .catalog__content {
   display: flex;
-  gap: 50px;
   align-items: center;
+  gap: 50px;
   margin-bottom: 150px;
 }
 
 .catalog__form {
-  max-width: 560px;
   width: 100%;
+  max-width: 560px;
 }
 
 .catalog__form-title {
@@ -26,39 +26,39 @@
 
 .catalog__form-text {
   max-width: 430px;
+  margin-bottom: 50px;
   font-size: 18px;
   font-weight: 300;
   line-height: calc(21 / 18);
-  margin-bottom: 50px;
   text-transform: uppercase;
   text-wrap: pretty;
 }
 
 .catalog__form-input {
-  margin-bottom: 30px;
-  padding: 20px;
   width: 100%;
-  border: 1px solid #171717;
+  padding: 20px;
+  margin-bottom: 30px;
   font-size: 24px;
   font-weight: 300;
-  color: #2b2b2b;
   line-height: calc(28 / 24);
+  color: #2b2b2b;
+  border: 1px solid #171717;
 }
 
 .catalog__form-input::placeholder {
   font-weight: 100;
-  color: inherit;
   text-transform: uppercase;
+  color: inherit;
 }
 
 .catalog__form-label {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 50px;
   font-size: 14px;
   font-weight: 300;
   line-height: calc(21 / 14);
-  margin-bottom: 50px;
 }
 
 .catalog__form-checkbox {
@@ -69,25 +69,25 @@
 
 .catalog__form-btn {
   padding: 20px 54px;
-  background-color: #171717;
-  font-weight: 300;
   font-size: 18px;
+  font-weight: 300;
   line-height: calc(21 / 18);
-  color: #f5f5f5;
   text-transform: uppercase;
+  color: #f5f5f5;
+  background-color: #171717;
 }
 
 .catalog__gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-@media (max-width: 1300px) {
+@media (width <= 1300px) {
   .catalog__content {
     flex-direction: column;
-    gap: 40px;
     align-items: start;
+    gap: 40px;
   }
 
   .catalog__form {
@@ -95,13 +95,13 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (width <= 1100px) {
   .catalog__gallery {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 740px) {
+@media (width <= 740px) {
   .catalog__content {
     margin-bottom: 50px;
   }
@@ -115,7 +115,7 @@
   }
 }
 
-@media (max-width: 540px) {
+@media (width <= 540px) {
   .catalog__content {
     gap: 20px;
   }
@@ -132,8 +132,8 @@
 
   .catalog__form-input {
     padding: 10px;
-    font-size: 16px;
     margin-bottom: 20px;
+    font-size: 16px;
   }
 
   .catalog__form-label {

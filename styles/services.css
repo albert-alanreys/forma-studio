@@ -1,6 +1,6 @@
 .services {
-  background-color: #171717;
   color: #f5f5f5;
+  background-color: #171717;
 }
 
 .services__list {
@@ -18,31 +18,31 @@
 
 .services__item-title {
   font-size: 28px;
-  text-transform: uppercase;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .services__item-text {
-  max-width: 800px;
   width: 100%;
+  max-width: 800px;
   text-wrap: pretty;
 }
 
-@media (max-width: 1300px) {
+@media (width <= 1300px) {
   .services__item {
     display: block;
     padding-right: 0;
   }
 }
 
-@media (max-width: 740px) {
+@media (width <= 740px) {
   .services__item {
     display: block;
     padding: 10px 0;
   }
 
   .services__item-title {
-    font-size: 20px;
     margin-bottom: 5px;
+    font-size: 20px;
   }
 }

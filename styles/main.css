@@ -4,9 +4,9 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
+  font-family: Roboto, sans-serif;
   line-height: 1.5;
   color: #2b2b2b;
   overflow-x: hidden;
@@ -24,13 +24,13 @@ body {
 
 .section__title {
   margin-bottom: 55px;
-  text-transform: uppercase;
-  font-weight: 300;
   font-size: 42px;
+  font-weight: 300;
   line-height: calc(49 / 42);
+  text-transform: uppercase;
 }
 
-@media (max-width: 740px) {
+@media (width <= 740px) {
   .section-box {
     padding: 50px 0;
   }
