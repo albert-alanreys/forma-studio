@@ -5,14 +5,14 @@
 .request__inner {
   padding: 184px 0;
   background: center / cover no-repeat
-    url('/public/images/request/request-bg.jpg');
+    url('../public/images/request/request-bg.jpg');
   background-image: image-set(
-    '/public/images/request/request-bg.avif' type('image/avif') 1x,
-    '/public/images/request/request-bg@2x.avif' type('image/avif') 2x,
-    '/public/images/request/request-bg.webp' type('image/webp') 1x,
-    '/public/images/request/request-bg@2x.webp' type('image/webp') 2x,
-    '/public/images/request/request-bg.jpg' type('image/jpeg') 1x,
-    '/public/images/request/request-bg@2x.jpg' type('image/jpeg') 2x
+    '../public/images/request/request-bg.avif' type('image/avif') 1x,
+    '../public/images/request/request-bg@2x.avif' type('image/avif') 2x,
+    '../public/images/request/request-bg.webp' type('image/webp') 1x,
+    '../public/images/request/request-bg@2x.webp' type('image/webp') 2x,
+    '../public/images/request/request-bg.jpg' type('image/jpeg') 1x,
+    '../public/images/request/request-bg@2x.jpg' type('image/jpeg') 2x
   );
 }
 

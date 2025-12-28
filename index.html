@@ -4,9 +4,55 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0"
+      content="width=device-width, initial-scale=1"
     />
-    <title>FORMA STUDIO</title>
+    <meta
+      name="color-scheme"
+      content="light"
+    />
+
+    <title>FORMA STUDIO — Architecture & Interior Design</title>
+
+    <meta
+      name="description"
+      content="FORMA STUDIO is an architecture and interior design bureau creating contemporary residential spaces with a focus on comfort, functionality, and aesthetics."
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:type"
+      content="website"
+    />
+    <meta
+      property="og:title"
+      content="FORMA STUDIO — Architecture & Interior Design"
+    />
+    <meta
+      property="og:description"
+      content="Contemporary architecture and interior design projects tailored to modern living."
+    />
+    <meta
+      property="og:image"
+      content="public/images/request/request-bg.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      name="twitter:title"
+      content="FORMA STUDIO — Architecture & Interior Design"
+    />
+    <meta
+      name="twitter:description"
+      content="Contemporary architecture and interior design projects tailored to modern living."
+    />
+    <meta
+      name="twitter:image"
+      content="public/images/request/request-bg.jpg"
+    />
 
     <link
       rel="icon"
@@ -14,6 +60,7 @@
       href="public/favicon.svg"
     />
 
+    <!-- Fonts -->
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
@@ -28,11 +75,13 @@
       rel="stylesheet"
     />
 
+    <!-- Vendor styles -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
 
+    <!-- App styles -->
     <link
       rel="stylesheet"
       href="styles/reset.css"
@@ -70,6 +119,7 @@
       href="styles/footer.css"
     />
 
+    <!-- Scripts -->
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
@@ -79,15 +129,27 @@
       src="scripts/main.js"
     ></script>
   </head>
+
   <body>
     <header class="header">
       <div class="container">
         <div class="header__top">
-          <nav class="menu">
-            <button class="menu__btn">
+          <nav
+            class="menu"
+            aria-label="Main navigation"
+          >
+            <button
+              class="menu__btn"
+              aria-expanded="false"
+              aria-controls="menu-list"
+              aria-label="Toggle menu"
+            >
               <span></span>
             </button>
-            <ul class="menu__list">
+            <ul
+              class="menu__list"
+              id="menu-list"
+            >
               <li class="menu__item">
                 <a
                   class="menu__link"
@@ -124,7 +186,7 @@
           >
             <img
               src="public/images/header/logo.svg"
-              alt=""
+              alt="FORMA STUDIO logo"
             />
           </a>
           <a
@@ -145,662 +207,736 @@
         </p>
         <a
           class="header__btn"
-          href=""
+          href="#"
+          role="button"
           >Submit a request</a
         >
       </div>
     </header>
 
-    <section class="services section-box">
-      <div class="container">
-        <h2 class="services__title section__title">Our Services</h2>
-        <ul class="services__list">
-          <li class="services__item">
-            <p class="services__item-title">Architectural Design</p>
-            <p class="services__item-text">
-              We design your home personally, combining ergonomics and
-              aesthetics, guided by a clear architectural vision of space.
-            </p>
-          </li>
-          <li class="services__item">
-            <p class="services__item-title">Interior Design</p>
-            <p class="services__item-text">
-              We create bespoke interior designs tailored to your preferences,
-              balancing functionality, comfort, and modern aesthetics.
-            </p>
-          </li>
-          <li class="services__item">
-            <p class="services__item-title">Architectural Supervision</p>
-            <p class="services__item-text">
-              We supervise the implementation of our projects from concept to
-              realization, ensuring quality at every stage.
-            </p>
-          </li>
-          <li class="services__item">
-            <p class="services__item-title">Turnkey Projects</p>
-            <p class="services__item-text">
-              We manage the entire process from concept development to project
-              completion, so you can focus on what matters most.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
+    <main>
+      <section
+        class="services section-box"
+        aria-labelledby="services-title"
+      >
+        <div class="container">
+          <h2
+            class="services__title section__title"
+            id="services-title"
+          >
+            Our Services
+          </h2>
+          <ul class="services__list">
+            <li class="services__item">
+              <h3 class="services__item-title">Architectural Design</h3>
+              <p class="services__item-text">
+                We design your home personally, combining ergonomics and
+                aesthetics, guided by a clear architectural vision of space.
+              </p>
+            </li>
+            <li class="services__item">
+              <h3 class="services__item-title">Interior Design</h3>
+              <p class="services__item-text">
+                We create bespoke interior designs tailored to your
+                preferences, balancing functionality, comfort, and modern
+                aesthetics.
+              </p>
+            </li>
+            <li class="services__item">
+              <h3 class="services__item-title">Architectural Supervision</h3>
+              <p class="services__item-text">
+                We supervise the implementation of our projects from concept to
+                realization, ensuring quality at every stage.
+              </p>
+            </li>
+            <li class="services__item">
+              <h3 class="services__item-title">Turnkey Projects</h3>
+              <p class="services__item-text">
+                We manage the entire process from concept development to
+                project completion, so you can focus on what matters most.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <section class="projects section-box">
-      <div class="container">
-        <h2 class="projects__title section__title">Our Projects</h2>
-        <div class="projects__slider swiper">
-          <div class="swiper-wrapper">
-            <div class="projects__item swiper-slide">
-              <picture>
-                <source
-                  srcset="
-                    public/images/projects/01/01.avif    1x,
-                    public/images/projects/01/01@2x.avif 2x
-                  "
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    public/images/projects/01/01.webp    1x,
-                    public/images/projects/01/01@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <img
-                  class="catalog__content-img"
-                  src="public/images/projects/01/01.jpg"
-                  srcset="public/images/projects/01/01@2x.jpg 2x"
-                  alt="Modern living room interior with contemporary furniture"
-                  loading="lazy"
-                />
-              </picture>
-              <h3 class="projects__item-title">Apartment 55.6 m²</h3>
-              <p class="projects__item-description">
-                For a young couple of lawyers
-              </p>
-              <p class="projects__item-text">
-                The main idea of this interior is to create a bright, light,
-                and cozy space. Warm colors and soft lines are used throughout
-                the design to evoke a sense of calm and harmony.
-              </p>
-              <a
-                class="projects__item-link"
-                href="#"
-                >more</a
-              >
+      <section
+        class="projects section-box"
+        aria-labelledby="projects-title"
+      >
+        <div class="container">
+          <h2
+            class="projects__title section__title"
+            id="projects-title"
+          >
+            Our Projects
+          </h2>
+          <div
+            class="projects__slider swiper"
+            role="region"
+            aria-label="Projects carousel"
+          >
+            <div class="swiper-wrapper">
+              <article class="projects__item swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      public/images/projects/01/01.avif    1x,
+                      public/images/projects/01/01@2x.avif 2x
+                    "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      public/images/projects/01/01.webp    1x,
+                      public/images/projects/01/01@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="catalog__content-img"
+                    src="public/images/projects/01/01.jpg"
+                    srcset="public/images/projects/01/01@2x.jpg 2x"
+                    alt="Modern living room interior with contemporary furniture"
+                    loading="lazy"
+                  />
+                </picture>
+                <h3 class="projects__item-title">Apartment 55.6 m²</h3>
+                <p class="projects__item-description">
+                  For a young couple of lawyers
+                </p>
+                <p class="projects__item-text">
+                  The main idea of this interior is to create a bright, light,
+                  and cozy space. Warm colors and soft lines are used
+                  throughout the design to evoke a sense of calm and harmony.
+                </p>
+                <a
+                  class="projects__item-link"
+                  href="#"
+                  >more</a
+                >
+              </article>
+              <article class="projects__item swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      public/images/projects/02/02.avif    1x,
+                      public/images/projects/02/02@2x.avif 2x
+                    "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      public/images/projects/02/02.webp    1x,
+                      public/images/projects/02/02@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="catalog__content-img"
+                    src="public/images/projects/02/02.jpg"
+                    srcset="public/images/projects/02/02@2x.jpg 2x"
+                    alt="Modern house exterior with large swimming pool"
+                    loading="lazy"
+                  />
+                </picture>
+                <h3 class="projects__item-title">The house</h3>
+                <p class="projects__item-description">
+                  For a family of doctors
+                </p>
+                <p class="projects__item-text">
+                  A comfortable space for the homeowners is ensured through
+                  proper organization and planning of the house. The open
+                  terrace seamlessly connects the pool, kitchen, and living
+                  areas.
+                </p>
+                <a
+                  class="projects__item-link"
+                  href="#"
+                  >more</a
+                >
+              </article>
+              <article class="projects__item swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      public/images/projects/03/03.avif    1x,
+                      public/images/projects/03/03@2x.avif 2x
+                    "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      public/images/projects/03/03.webp    1x,
+                      public/images/projects/03/03@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="catalog__content-img"
+                    src="public/images/projects/03/03.jpg"
+                    srcset="public/images/projects/03/03@2x.jpg 2x"
+                    alt="Modern house exterior with small pool and outdoor lounge area"
+                    loading="lazy"
+                  />
+                </picture>
+                <h3 class="projects__item-title">Country House</h3>
+                <p class="projects__item-description">
+                  For a family of entrepreneurs
+                </p>
+                <p class="projects__item-text">
+                  During the project development, a layout was created
+                  featuring an open kitchen-living area with a centrally placed
+                  fireplace that serves as a spatial divider.
+                </p>
+                <a
+                  class="projects__item-link"
+                  href="#"
+                  >more</a
+                >
+              </article>
+              <article class="projects__item swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      public/images/projects/01/01.avif    1x,
+                      public/images/projects/01/01@2x.avif 2x
+                    "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      public/images/projects/01/01.webp    1x,
+                      public/images/projects/01/01@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="catalog__content-img"
+                    src="public/images/projects/01/01.jpg"
+                    srcset="public/images/projects/01/01@2x.jpg 2x"
+                    alt="Modern living room interior with contemporary furniture"
+                    loading="lazy"
+                  />
+                </picture>
+                <h3 class="projects__item-title">Apartment 55.6 m²</h3>
+                <p class="projects__item-description">
+                  For a young couple of lawyers
+                </p>
+                <p class="projects__item-text">
+                  The main idea of this interior is to create a bright, light,
+                  and cozy space. Warm colors and soft lines are used
+                  throughout the design to evoke a sense of calm and harmony.
+                </p>
+                <a
+                  class="projects__item-link"
+                  href="#"
+                  >more</a
+                >
+              </article>
+              <article class="projects__item swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      public/images/projects/02/02.avif    1x,
+                      public/images/projects/02/02@2x.avif 2x
+                    "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      public/images/projects/02/02.webp    1x,
+                      public/images/projects/02/02@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="catalog__content-img"
+                    src="public/images/projects/02/02.jpg"
+                    srcset="public/images/projects/02/02@2x.jpg 2x"
+                    alt="Modern house exterior with large swimming pool"
+                    loading="lazy"
+                  />
+                </picture>
+                <h3 class="projects__item-title">The house</h3>
+                <p class="projects__item-description">
+                  For a family of doctors
+                </p>
+                <p class="projects__item-text">
+                  A comfortable space for the homeowners is ensured through
+                  proper organization and planning of the house. The open
+                  terrace seamlessly connects the pool, kitchen, and living
+                  areas.
+                </p>
+                <a
+                  class="projects__item-link"
+                  href="#"
+                  >more</a
+                >
+              </article>
+              <article class="projects__item swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      public/images/projects/03/03.avif    1x,
+                      public/images/projects/03/03@2x.avif 2x
+                    "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      public/images/projects/03/03.webp    1x,
+                      public/images/projects/03/03@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="catalog__content-img"
+                    src="public/images/projects/03/03.jpg"
+                    srcset="public/images/projects/03/03@2x.jpg 2x"
+                    alt="Modern house exterior with small pool and outdoor lounge area"
+                    loading="lazy"
+                  />
+                </picture>
+                <h3 class="projects__item-title">Country House</h3>
+                <p class="projects__item-description">
+                  For a family of entrepreneurs
+                </p>
+                <p class="projects__item-text">
+                  During the project development, a layout was created
+                  featuring an open kitchen-living area with a centrally placed
+                  fireplace that serves as a spatial divider.
+                </p>
+                <a
+                  class="projects__item-link"
+                  href="#"
+                  >more</a
+                >
+              </article>
             </div>
-            <div class="projects__item swiper-slide">
-              <picture>
-                <source
-                  srcset="
-                    public/images/projects/02/02.avif    1x,
-                    public/images/projects/02/02@2x.avif 2x
-                  "
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    public/images/projects/02/02.webp    1x,
-                    public/images/projects/02/02@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <img
-                  class="catalog__content-img"
-                  src="public/images/projects/02/02.jpg"
-                  srcset="public/images/projects/02/02@2x.jpg 2x"
-                  alt="Modern house exterior with large swimming pool"
-                  loading="lazy"
-                />
-              </picture>
-              <h3 class="projects__item-title">The house</h3>
-              <p class="projects__item-description">For a family of doctors</p>
-              <p class="projects__item-text">
-                A comfortable space for the homeowners is ensured through
-                proper organization and planning of the house. The open terrace
-                seamlessly connects the pool, kitchen, and living areas.
-              </p>
-              <a
-                class="projects__item-link"
-                href="#"
-                >more</a
+            <div class="projects__arrows">
+              <button
+                class="projects__arrow projects__arrow--prev"
+                aria-label="Previous slide"
               >
-            </div>
-            <div class="projects__item swiper-slide">
-              <picture>
-                <source
-                  srcset="
-                    public/images/projects/03/03.avif    1x,
-                    public/images/projects/03/03@2x.avif 2x
-                  "
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    public/images/projects/03/03.webp    1x,
-                    public/images/projects/03/03@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
                 <img
-                  class="catalog__content-img"
-                  src="public/images/projects/03/03.jpg"
-                  srcset="public/images/projects/03/03@2x.jpg 2x"
-                  alt="Modern house exterior with small pool and outdoor lounge area"
-                  loading="lazy"
+                  src="public/images/projects/arrow.svg"
+                  alt=""
                 />
-              </picture>
-              <h3 class="projects__item-title">Country House</h3>
-              <p class="projects__item-description">
-                For a family of entrepreneurs
-              </p>
-              <p class="projects__item-text">
-                During the project development, a layout was created featuring
-                an open kitchen-living area with a centrally placed fireplace
-                that serves as a spatial divider.
-              </p>
-              <a
-                class="projects__item-link"
-                href="#"
-                >more</a
+              </button>
+              <button
+                class="projects__arrow projects__arrow--next"
+                aria-label="Next slide"
               >
-            </div>
-            <div class="projects__item swiper-slide">
-              <picture>
-                <source
-                  srcset="
-                    public/images/projects/01/01.avif    1x,
-                    public/images/projects/01/01@2x.avif 2x
-                  "
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    public/images/projects/01/01.webp    1x,
-                    public/images/projects/01/01@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
                 <img
-                  class="catalog__content-img"
-                  src="public/images/projects/01/01.jpg"
-                  srcset="public/images/projects/01/01@2x.jpg 2x"
-                  alt="Modern living room interior with contemporary furniture"
-                  loading="lazy"
+                  src="public/images/projects/arrow.svg"
+                  alt=""
                 />
-              </picture>
-              <h3 class="projects__item-title">Apartment 55.6 m²</h3>
-              <p class="projects__item-description">
-                For a young couple of lawyers
-              </p>
-              <p class="projects__item-text">
-                The main idea of this interior is to create a bright, light,
-                and cozy space. Warm colors and soft lines are used throughout
-                the design to evoke a sense of calm and harmony.
-              </p>
-              <a
-                class="projects__item-link"
-                href="#"
-                >more</a
-              >
-            </div>
-            <div class="projects__item swiper-slide">
-              <picture>
-                <source
-                  srcset="
-                    public/images/projects/02/02.avif    1x,
-                    public/images/projects/02/02@2x.avif 2x
-                  "
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    public/images/projects/02/02.webp    1x,
-                    public/images/projects/02/02@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <img
-                  class="catalog__content-img"
-                  src="public/images/projects/02/02.jpg"
-                  srcset="public/images/projects/02/02@2x.jpg 2x"
-                  alt="Modern house exterior with large swimming pool"
-                  loading="lazy"
-                />
-              </picture>
-              <h3 class="projects__item-title">The house</h3>
-              <p class="projects__item-description">For a family of doctors</p>
-              <p class="projects__item-text">
-                A comfortable space for the homeowners is ensured through
-                proper organization and planning of the house. The open terrace
-                seamlessly connects the pool, kitchen, and living areas.
-              </p>
-              <a
-                class="projects__item-link"
-                href="#"
-                >more</a
-              >
-            </div>
-            <div class="projects__item swiper-slide">
-              <picture>
-                <source
-                  srcset="
-                    public/images/projects/03/03.avif    1x,
-                    public/images/projects/03/03@2x.avif 2x
-                  "
-                  type="image/avif"
-                />
-                <source
-                  srcset="
-                    public/images/projects/03/03.webp    1x,
-                    public/images/projects/03/03@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <img
-                  class="catalog__content-img"
-                  src="public/images/projects/03/03.jpg"
-                  srcset="public/images/projects/03/03@2x.jpg 2x"
-                  alt="Modern house exterior with small pool and outdoor lounge area"
-                  loading="lazy"
-                />
-              </picture>
-              <h3 class="projects__item-title">Country House</h3>
-              <p class="projects__item-description">
-                For a family of entrepreneurs
-              </p>
-              <p class="projects__item-text">
-                During the project development, a layout was created featuring
-                an open kitchen-living area with a centrally placed fireplace
-                that serves as a spatial divider.
-              </p>
-              <a
-                class="projects__item-link"
-                href="#"
-                >more</a
-              >
+              </button>
             </div>
           </div>
-          <div class="projects__arrows">
-            <img
-              class="projects__arrow projects__arrow--prev"
-              src="public/images/projects/arrow.svg"
-              alt="Previous slide"
-            />
-            <img
-              class="projects__arrow projects__arrow--next"
-              src="public/images/projects/arrow.svg"
-              alt="Next slide"
-            />
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="steps">
-      <div class="container">
-        <h2 class="steps__title section__title">
-          from request to turnkey delivery
-        </h2>
-        <ol class="steps__list">
-          <li class="steps__item">
-            <p class="steps__item-title">We receive your request</p>
-            <p class="steps__item-text">
-              Call us or send a message through the website.
-            </p>
-          </li>
-          <li class="steps__item">
-            <p class="steps__item-title">Let’s get acquainted</p>
-            <p class="steps__item-text">
-              During the first meeting, we will discuss all the details of your
-              project.
-            </p>
-          </li>
-          <li class="steps__item">
-            <p class="steps__item-title">We visit the site</p>
-            <p class="steps__item-text">
-              We meet on-site to take necessary measurements, conduct a photo
-              survey, and complete a detailed technical brief.
-            </p>
-          </li>
-          <li class="steps__item">
-            <p class="steps__item-title">
-              We discuss and agree on the overall project budget.
-            </p>
-            <p class="steps__item-text">
-              Costs for interior elements, finishing materials, furniture, and
-              equipment.
-            </p>
-          </li>
-          <li class="steps__item">
-            <p class="steps__item-title">We define the layout solution.</p>
-            <p class="steps__item-text">
-              At this stage, we offer several options for zoning, furniture
-              placement, and equipment layout.
-            </p>
-          </li>
-          <li class="steps__item">
-            <p class="steps__item-title">We develop the design concept.</p>
-            <p class="steps__item-text">
-              Based on your tastes and taking into account current trends and
-              directions, we define the style of your future interior.
-            </p>
-          </li>
-          <li class="steps__item">
-            <p class="steps__item-title">
-              We prepare the working documentation.
-            </p>
-            <p class="steps__item-text">
-              At the next stage, we prepare all the necessary working drawings.
-            </p>
-          </li>
-          <li class="steps__item">
-            <p class="steps__item-title">Project outfitting</p>
-            <p class="steps__item-text">
-              At the final outfitting stage, we compile specifications for
-              furniture, lighting, and interior items.
-            </p>
-          </li>
-        </ol>
-      </div>
-      <div class="steps__img">
-        <picture>
-          <source
-            srcset="
-              public/images/steps/steps.avif    1x,
-              public/images/steps/steps@2x.avif 2x
-            "
-            type="image/avif"
-          />
-          <source
-            srcset="
-              public/images/steps/steps.webp    1x,
-              public/images/steps/steps@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <img
-            class="catalog__content-img"
-            src="public/images/steps/steps.jpg"
-            srcset="public/images/steps/steps@2x.jpg 2x"
-            alt="Modern living room interior with accent decor"
-            loading="lazy"
-          />
-        </picture>
-      </div>
-    </section>
-
-    <section class="catalog section-box">
-      <div class="container">
-        <h2 class="catalog__title section__title">
-          Get a catalog of our projects
-        </h2>
-        <div class="catalog__content">
-          <picture>
-            <source
-              srcset="
-                public/images/catalog/catalog-photo.avif    1x,
-                public/images/catalog/catalog-photo@2x.avif 2x
-              "
-              type="image/avif"
-            />
-            <source
-              srcset="
-                public/images/catalog/catalog-photo.webp    1x,
-                public/images/catalog/catalog-photo@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <img
-              class="catalog__content-img"
-              src="public/images/catalog/catalog-photo.jpg"
-              srcset="public/images/catalog/catalog-photo@2x.jpg 2x"
-              alt="Description of the image"
-            />
-          </picture>
-
-          <form class="catalog__form">
-            <h3 class="catalog__form-title">
-              Leave your email to receive our project catalog
-            </h3>
-            <p class="catalog__form-text">
-              The catalog will help you choose a style and plan your layout.
-            </p>
-            <input
-              class="catalog__form-input"
-              type="email"
-              placeholder="Enter your email"
-            />
-            <label class="catalog__form-label">
-              <input
-                class="catalog__form-checkbox"
-                type="checkbox"
-              />
-              I agree to the processing of personal data
-            </label>
-            <button
-              class="catalog__form-btn"
-              type="submit"
-            >
-              Get the catalog
-            </button>
-          </form>
+      <section
+        class="steps"
+        aria-labelledby="steps-title"
+      >
+        <div class="container">
+          <h2
+            class="steps__title section__title"
+            id="steps-title"
+          >
+            from request to turnkey delivery
+          </h2>
+          <ol class="steps__list">
+            <li class="steps__item">
+              <h3 class="steps__item-title">We receive your request</h3>
+              <p class="steps__item-text">
+                Call us or send a message through the website.
+              </p>
+            </li>
+            <li class="steps__item">
+              <h3 class="steps__item-title">Let’s get acquainted</h3>
+              <p class="steps__item-text">
+                During the first meeting, we will discuss all the details of
+                your project.
+              </p>
+            </li>
+            <li class="steps__item">
+              <h3 class="steps__item-title">We visit the site</h3>
+              <p class="steps__item-text">
+                We meet on-site to take necessary measurements, conduct a photo
+                survey, and complete a detailed technical brief.
+              </p>
+            </li>
+            <li class="steps__item">
+              <h3 class="steps__item-title">
+                We discuss and agree on the overall project budget.
+              </h3>
+              <p class="steps__item-text">
+                Costs for interior elements, finishing materials, furniture,
+                and equipment.
+              </p>
+            </li>
+            <li class="steps__item">
+              <h3 class="steps__item-title">We define the layout solution.</h3>
+              <p class="steps__item-text">
+                At this stage, we offer several options for zoning, furniture
+                placement, and equipment layout.
+              </p>
+            </li>
+            <li class="steps__item">
+              <h3 class="steps__item-title">We develop the design concept.</h3>
+              <p class="steps__item-text">
+                Based on your tastes and taking into account current trends and
+                directions, we define the style of your future interior.
+              </p>
+            </li>
+            <li class="steps__item">
+              <h3 class="steps__item-title">
+                We prepare the working documentation.
+              </h3>
+              <p class="steps__item-text">
+                At the next stage, we prepare all the necessary working
+                drawings.
+              </p>
+            </li>
+            <li class="steps__item">
+              <h3 class="steps__item-title">Project outfitting</h3>
+              <p class="steps__item-text">
+                At the final outfitting stage, we compile specifications for
+                furniture, lighting, and interior items.
+              </p>
+            </li>
+          </ol>
         </div>
-        <div class="catalog__gallery">
+        <div class="steps__img">
           <picture>
             <source
               srcset="
-                public/images/catalog/gallery/01/01.avif    1x,
-                public/images/catalog/gallery/01/01@2x.avif 2x
+                public/images/steps/steps.avif    1x,
+                public/images/steps/steps@2x.avif 2x
               "
               type="image/avif"
             />
             <source
               srcset="
-                public/images/catalog/gallery/01/01.webp    1x,
-                public/images/catalog/gallery/01/01@2x.webp 2x
+                public/images/steps/steps.webp    1x,
+                public/images/steps/steps@2x.webp 2x
               "
               type="image/webp"
             />
             <img
               class="catalog__content-img"
-              src="public/images/catalog/gallery/01/01.jpg"
-              srcset="public/images/catalog/gallery/01/01@2x.jpg 2x"
-              alt="Modern kitchen interior with minimalist design"
-              loading="lazy"
-            />
-          </picture>
-          <picture>
-            <source
-              srcset="
-                public/images/catalog/gallery/02/02.avif    1x,
-                public/images/catalog/gallery/02/02@2x.avif 2x
-              "
-              type="image/avif"
-            />
-            <source
-              srcset="
-                public/images/catalog/gallery/02/02.webp    1x,
-                public/images/catalog/gallery/02/02@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <img
-              class="catalog__content-img"
-              src="public/images/catalog/gallery/02/02.jpg"
-              srcset="public/images/catalog/gallery/02/02@2x.jpg 2x"
-              alt="Elegant corridor interior with modern lighting"
-              loading="lazy"
-            />
-          </picture>
-          <picture>
-            <source
-              srcset="
-                public/images/catalog/gallery/03/03.avif    1x,
-                public/images/catalog/gallery/03/03@2x.avif 2x
-              "
-              type="image/avif"
-            />
-            <source
-              srcset="
-                public/images/catalog/gallery/03/03.webp    1x,
-                public/images/catalog/gallery/03/03@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <img
-              class="catalog__content-img"
-              src="public/images/catalog/gallery/03/03.jpg"
-              srcset="public/images/catalog/gallery/03/03@2x.jpg 2x"
-              alt="Stylish kitchen interior with open shelving"
-              loading="lazy"
-            />
-          </picture>
-          <picture>
-            <source
-              srcset="
-                public/images/catalog/gallery/04/04.avif    1x,
-                public/images/catalog/gallery/04/04@2x.avif 2x
-              "
-              type="image/avif"
-            />
-            <source
-              srcset="
-                public/images/catalog/gallery/04/04.webp    1x,
-                public/images/catalog/gallery/04/04@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <img
-              class="catalog__content-img"
-              src="public/images/catalog/gallery/04/04.jpg"
-              srcset="public/images/catalog/gallery/04/04@2x.jpg 2x"
-              alt="Contemporary kitchen layout with natural light"
-              loading="lazy"
-            />
-          </picture>
-          <picture>
-            <source
-              srcset="
-                public/images/catalog/gallery/05/05.avif    1x,
-                public/images/catalog/gallery/05/05@2x.avif 2x
-              "
-              type="image/avif"
-            />
-            <source
-              srcset="
-                public/images/catalog/gallery/05/05.webp    1x,
-                public/images/catalog/gallery/05/05@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <img
-              class="catalog__content-img"
-              src="public/images/catalog/gallery/05/05.jpg"
-              srcset="public/images/catalog/gallery/05/05@2x.jpg 2x"
-              alt="Spacious living room interior with modern furniture"
-              loading="lazy"
-            />
-          </picture>
-          <picture>
-            <source
-              srcset="
-                public/images/catalog/gallery/06/06.avif    1x,
-                public/images/catalog/gallery/06/06@2x.avif 2x
-              "
-              type="image/avif"
-            />
-            <source
-              srcset="
-                public/images/catalog/gallery/06/06.webp    1x,
-                public/images/catalog/gallery/06/06@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <img
-              class="catalog__content-img"
-              src="public/images/catalog/gallery/06/06.jpg"
-              srcset="public/images/catalog/gallery/06/06@2x.jpg 2x"
-              alt="Cozy bedroom interior with soft lighting"
-              loading="lazy"
-            />
-          </picture>
-          <picture>
-            <source
-              srcset="
-                public/images/catalog/gallery/07/07.avif    1x,
-                public/images/catalog/gallery/07/07@2x.avif 2x
-              "
-              type="image/avif"
-            />
-            <source
-              srcset="
-                public/images/catalog/gallery/07/07.webp    1x,
-                public/images/catalog/gallery/07/07@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <img
-              class="catalog__content-img"
-              src="public/images/catalog/gallery/07/07.jpg"
-              srcset="public/images/catalog/gallery/07/07@2x.jpg 2x"
+              src="public/images/steps/steps.jpg"
+              srcset="public/images/steps/steps@2x.jpg 2x"
               alt="Modern living room interior with accent decor"
               loading="lazy"
             />
           </picture>
-          <picture>
-            <source
-              srcset="
-                public/images/catalog/gallery/08/08.avif    1x,
-                public/images/catalog/gallery/08/08@2x.avif 2x
-              "
-              type="image/avif"
-            />
-            <source
-              srcset="
-                public/images/catalog/gallery/08/08.webp    1x,
-                public/images/catalog/gallery/08/08@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <img
-              class="catalog__content-img"
-              src="public/images/catalog/gallery/08/08.jpg"
-              srcset="public/images/catalog/gallery/08/08@2x.jpg 2x"
-              alt="Outdoor patio space with modern furniture"
-              loading="lazy"
-            />
-          </picture>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="request">
-      <div class="container">
-        <div class="request__inner">
-          <div class="request__content">
-            <h2 class="request__title section__title">
-              Submit a request and we will assist you with your project
-            </h2>
-            <form class="request__form">
-              <input
-                class="request__form-input"
-                type="email"
-                placeholder="Enter your email"
+      <section
+        class="catalog section-box"
+        aria-labelledby="catalog-title"
+      >
+        <div class="container">
+          <h2
+            class="catalog__title section__title"
+            id="catalog-title"
+          >
+            Get a catalog of our projects
+          </h2>
+          <div class="catalog__content">
+            <picture>
+              <source
+                srcset="
+                  public/images/catalog/catalog-photo.avif    1x,
+                  public/images/catalog/catalog-photo@2x.avif 2x
+                "
+                type="image/avif"
               />
+              <source
+                srcset="
+                  public/images/catalog/catalog-photo.webp    1x,
+                  public/images/catalog/catalog-photo@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="catalog__content-img"
+                src="public/images/catalog/catalog-photo.jpg"
+                srcset="public/images/catalog/catalog-photo@2x.jpg 2x"
+                alt="Modern interior design example"
+              />
+            </picture>
+            <form class="catalog__form">
+              <h3 class="catalog__form-title">
+                Leave your email to receive our project catalog
+              </h3>
+              <p class="catalog__form-text">
+                The catalog will help you choose a style and plan your layout.
+              </p>
+              <label
+                class="sr-only"
+                for="catalog-email"
+                >Enter your email</label
+              >
+              <input
+                class="catalog__form-input"
+                type="email"
+                id="catalog-email"
+                placeholder="Enter your email"
+                required
+              />
+              <label class="catalog__form-label">
+                <input
+                  class="catalog__form-checkbox"
+                  type="checkbox"
+                  required
+                />
+                I agree to the processing of personal data
+              </label>
               <button
-                class="request__form-btn"
+                class="catalog__form-btn"
                 type="submit"
               >
-                Submit a request
+                Get the catalog
               </button>
             </form>
           </div>
+          <div
+            class="catalog__gallery"
+            aria-label="Project gallery"
+          >
+            <picture>
+              <source
+                srcset="
+                  public/images/catalog/gallery/01/01.avif    1x,
+                  public/images/catalog/gallery/01/01@2x.avif 2x
+                "
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  public/images/catalog/gallery/01/01.webp    1x,
+                  public/images/catalog/gallery/01/01@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="catalog__content-img"
+                src="public/images/catalog/gallery/01/01.jpg"
+                srcset="public/images/catalog/gallery/01/01@2x.jpg 2x"
+                alt="Modern kitchen interior with minimalist design"
+                loading="lazy"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="
+                  public/images/catalog/gallery/02/02.avif    1x,
+                  public/images/catalog/gallery/02/02@2x.avif 2x
+                "
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  public/images/catalog/gallery/02/02.webp    1x,
+                  public/images/catalog/gallery/02/02@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="catalog__content-img"
+                src="public/images/catalog/gallery/02/02.jpg"
+                srcset="public/images/catalog/gallery/02/02@2x.jpg 2x"
+                alt="Elegant corridor interior with modern lighting"
+                loading="lazy"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="
+                  public/images/catalog/gallery/03/03.avif    1x,
+                  public/images/catalog/gallery/03/03@2x.avif 2x
+                "
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  public/images/catalog/gallery/03/03.webp    1x,
+                  public/images/catalog/gallery/03/03@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="catalog__content-img"
+                src="public/images/catalog/gallery/03/03.jpg"
+                srcset="public/images/catalog/gallery/03/03@2x.jpg 2x"
+                alt="Stylish kitchen interior with open shelving"
+                loading="lazy"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="
+                  public/images/catalog/gallery/04/04.avif    1x,
+                  public/images/catalog/gallery/04/04@2x.avif 2x
+                "
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  public/images/catalog/gallery/04/04.webp    1x,
+                  public/images/catalog/gallery/04/04@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="catalog__content-img"
+                src="public/images/catalog/gallery/04/04.jpg"
+                srcset="public/images/catalog/gallery/04/04@2x.jpg 2x"
+                alt="Contemporary kitchen layout with natural light"
+                loading="lazy"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="
+                  public/images/catalog/gallery/05/05.avif    1x,
+                  public/images/catalog/gallery/05/05@2x.avif 2x
+                "
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  public/images/catalog/gallery/05/05.webp    1x,
+                  public/images/catalog/gallery/05/05@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="catalog__content-img"
+                src="public/images/catalog/gallery/05/05.jpg"
+                srcset="public/images/catalog/gallery/05/05@2x.jpg 2x"
+                alt="Spacious living room interior with modern furniture"
+                loading="lazy"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="
+                  public/images/catalog/gallery/06/06.avif    1x,
+                  public/images/catalog/gallery/06/06@2x.avif 2x
+                "
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  public/images/catalog/gallery/06/06.webp    1x,
+                  public/images/catalog/gallery/06/06@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="catalog__content-img"
+                src="public/images/catalog/gallery/06/06.jpg"
+                srcset="public/images/catalog/gallery/06/06@2x.jpg 2x"
+                alt="Cozy bedroom interior with soft lighting"
+                loading="lazy"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="
+                  public/images/catalog/gallery/07/07.avif    1x,
+                  public/images/catalog/gallery/07/07@2x.avif 2x
+                "
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  public/images/catalog/gallery/07/07.webp    1x,
+                  public/images/catalog/gallery/07/07@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="catalog__content-img"
+                src="public/images/catalog/gallery/07/07.jpg"
+                srcset="public/images/catalog/gallery/07/07@2x.jpg 2x"
+                alt="Modern living room interior with accent decor"
+                loading="lazy"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="
+                  public/images/catalog/gallery/08/08.avif    1x,
+                  public/images/catalog/gallery/08/08@2x.avif 2x
+                "
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  public/images/catalog/gallery/08/08.webp    1x,
+                  public/images/catalog/gallery/08/08@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="catalog__content-img"
+                src="public/images/catalog/gallery/08/08.jpg"
+                srcset="public/images/catalog/gallery/08/08@2x.jpg 2x"
+                alt="Outdoor patio space with modern furniture"
+                loading="lazy"
+              />
+            </picture>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section
+        class="request"
+        aria-labelledby="request-title"
+      >
+        <div class="container">
+          <div class="request__inner">
+            <div class="request__content">
+              <h2
+                class="request__title section__title"
+                id="request-title"
+              >
+                Submit a request and we will assist you with your project
+              </h2>
+              <form class="request__form">
+                <label
+                  class="sr-only"
+                  for="request-email"
+                  >Enter your email</label
+                >
+                <input
+                  class="request__form-input"
+                  type="email"
+                  id="request-email"
+                  placeholder="Enter your email"
+                  required
+                />
+                <button
+                  class="request__form-btn"
+                  type="submit"
+                >
+                  Submit a request
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="container">
@@ -811,78 +947,85 @@
           >
             <img
               src="public/images/footer/logo.svg"
-              alt=""
+              alt="FORMA STUDIO logo"
             />
           </a>
-          <ul class="footer__nav">
-            <li class="footer__nav-item">
-              <a
-                class="footer__nav-link"
-                href="#"
-                >About studio</a
-              >
-            </li>
-            <li class="footer__nav-item">
-              <a
-                class="footer__nav-link"
-                href="#"
-                >PRICES</a
-              >
-            </li>
-            <li class="footer__nav-item">
-              <a
-                class="footer__nav-link"
-                href="#"
-                >PROJECTS</a
-              >
-            </li>
-            <li class="footer__nav-item">
-              <a
-                class="footer__nav-link"
-                href="#"
-                >CONTACTS</a
-              >
-            </li>
-          </ul>
-          <ul class="footer__nav">
-            <li class="footer__nav-item">
-              <a
-                class="footer__nav-link"
-                href="#"
-                >Interior Design</a
-              >
-            </li>
-            <li class="footer__nav-item">
-              <a
-                class="footer__nav-link"
-                href="#"
-                >Architectural Design</a
-              >
-            </li>
-            <li class="footer__nav-item">
-              <a
-                class="footer__nav-link"
-                href="#"
-                >Author’s Supervision</a
-              >
-            </li>
-            <li class="footer__nav-item">
-              <a
-                class="footer__nav-link"
-                href="#"
-                >Turnkey Projects</a
-              >
-            </li>
-          </ul>
-          <ul class="footer__social">
+          <nav aria-label="Footer navigation">
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a
+                  class="footer__nav-link"
+                  href="#"
+                  >About studio</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a
+                  class="footer__nav-link"
+                  href="#"
+                  >PRICES</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a
+                  class="footer__nav-link"
+                  href="#"
+                  >PROJECTS</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a
+                  class="footer__nav-link"
+                  href="#"
+                  >CONTACTS</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <nav aria-label="Services navigation">
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a
+                  class="footer__nav-link"
+                  href="#"
+                  >Interior Design</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a
+                  class="footer__nav-link"
+                  href="#"
+                  >Architectural Design</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a
+                  class="footer__nav-link"
+                  href="#"
+                  >Author’s Supervision</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a
+                  class="footer__nav-link"
+                  href="#"
+                  >Turnkey Projects</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul
+            class="footer__social"
+            aria-label="Social media links"
+          >
             <li class="footer__social-item">
               <a
                 class="footer__social-link"
-                href="#"
+                href="mailto:formastudio@gmail.com"
               >
                 <img
                   src="public/images/footer/email.svg"
-                  alt=""
+                  alt="Email icon"
                 />
                 <span>formastudio@gmail.com</span>
               </a>
@@ -894,7 +1037,7 @@
               >
                 <img
                   src="public/images/footer/instagram.svg"
-                  alt=""
+                  alt="Instagram icon"
                 />
                 <span>formastudio</span>
               </a>
@@ -906,7 +1049,7 @@
               >
                 <img
                   src="public/images/footer/facebook.svg"
-                  alt=""
+                  alt="Facebook icon"
                 />
                 <span>forma.studio</span>
               </a>
@@ -918,7 +1061,7 @@
               >
                 <img
                   src="public/images/footer/telegram.svg"
-                  alt=""
+                  alt="Telegram icon"
                 />
                 <span>@forma.studio</span>
               </a>
@@ -930,7 +1073,7 @@
               >
                 <img
                   src="public/images/footer/pinterest.svg"
-                  alt=""
+                  alt="Pinterest icon"
                 />
                 <span>forma.studio</span>
               </a>
@@ -944,7 +1087,7 @@
               >
                 <img
                   src="public/images/footer/location.svg"
-                  alt=""
+                  alt="Location icon"
                 />
                 <span
                   >Kyiv, 14 <br />
@@ -959,7 +1102,7 @@
               >
                 <img
                   src="public/images/footer/phone.svg"
-                  alt=""
+                  alt="Phone icon"
                 />
                 +38 (068) 255 45 85
               </a>
@@ -974,7 +1117,7 @@
         <p class="footer__copy">
           <img
             src="public/images/footer/copyright.svg"
-            alt=""
+            alt="Copyright symbol"
           />
           2010-2025 Bureau
         </p>
