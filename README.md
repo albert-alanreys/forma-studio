@@ -8,7 +8,7 @@ Landing page for the **Forma Studio** architecture and interior design bureau.
 
 ## 🌐 Try it live
 
-[![🌐 Open on GitHub Pages](https://img.shields.io/badge/Open-Project-171717?style=for-the-badge&logo=github&logoColor=white)](https://albert-alanreys.github.io/forma-studio/)
+[![🌐 Open on GitHub Pages](https://img.shields.io/badge/Open-Project-171717?style=for-the-badge&logo=github&logoColor=white)](https://alexey-alanreys.github.io/forma-studio/)
 
 > Click the button above to open the live demo of the Forma Studio landing page.
 
@@ -72,9 +72,9 @@ This project uses plain HTML, CSS, and JavaScript with no build tools required.
 The project is automatically deployed to **GitHub Pages**.
 
 You can view the live site here:
-👉 [https://albert-alanreys.github.io/forma-studio/](https://albert-alanreys.github.io/forma-studio/)
+👉 [https://alexey-alanreys.github.io/forma-studio/](https://alexey-alanreys.github.io/forma-studio/)
 
 ---
 
 **License:** MIT
-**Author:** [Albert Alan-Reys](https://github.com/albert-alanreys)
+**Author:** [Alexey Alan-Reys](https://github.com/alexey-alanreys)
